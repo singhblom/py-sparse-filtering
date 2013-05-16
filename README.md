@@ -4,7 +4,7 @@ py-sparse-filtering
 Python implementation of the Sparse Filtering code by Ngiam et al.
 
 Dependencies
-============
+------------
 
 The main code depends on numpy and scipy's optimization toolkit. For
 the demo you also need matplotlib/pylab for visualization and `scipy.io.loadmat`
