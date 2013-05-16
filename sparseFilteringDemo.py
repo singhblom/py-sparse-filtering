@@ -66,7 +66,7 @@ def displayData(X, example_width = False, display_cols = False):
 def main():
 	print "Loading data ..."
 	# Loads variable `data` (size 256x50000)
-	data = loadmat('Matlab/sparseFiltering/patches.mat')['data']
+	data = loadmat('patches.mat')['data']
 	# Remove DC
 	# data = data[:,:10000]
 	data -= data.mean()
