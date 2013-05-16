@@ -11,6 +11,6 @@ the demo you also need matplotlib/pylab for visualization and `scipy.io.loadmat`
 for reading in the image data.
 
 The image data is the same as the data used by Jiquan Ngiam et al., and can be
-downloaded from `http://cs.stanford.edu/~jngiam/data/patches.mat`.
+downloaded from <http://cs.stanford.edu/~jngiam/data/patches.mat>.
 
 
