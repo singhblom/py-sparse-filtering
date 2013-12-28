@@ -18,8 +18,7 @@ def displayData(X, example_width = False, display_cols = False):
 	Display 2D data in a nice grid
 	==============================
 
-	Displays 2D data stored in X in a nice grid. It returns the
-	figure handle and the displayed array.
+	Displays 2D data stored in X in a nice grid.
 	"""
 	# compute rows, cols
 	m,n = X.shape
@@ -69,7 +68,7 @@ def main():
 	data = loadmat('patches.mat')['data']
 	# Remove DC
 	# data = data[:,:10000]
-	data -= data.mean()
+	data -= data.mean(axis=0)
 	# Train layer 1
 	print "Training layer 1 ..."
 	L1_size = 256 # Increase this for more features
@@ -79,7 +78,7 @@ def main():
 	displayData(L1)
 	# Feed-forward layer 1
 	data1 = feedForwardSF(L1,data)
-	data1 -= data1.mean()
+	data1 -= data1.mean(axis=0)
 	# Train layer 2
 	print "Training layer 2 ..."
 	L2_size = 256
